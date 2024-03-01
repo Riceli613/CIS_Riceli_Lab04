@@ -22,10 +22,11 @@ elif monthlySales >= 80000 and monthlySales < 90000:
 else:
     storeAmount = 0
 
+#Converts user's input to a percentage. 
 salesIncrease = float(input("Enter sales increase.\n"))
 salesIncrease = salesIncrease / 100
 
-
+#Determines if sales increase is going to receive a bonus for each individual employee.
 if salesIncrease >= .05:
     empAmount = 75
 elif salesIncrease >= .04:
@@ -35,6 +36,7 @@ elif salesIncrease >= .03:
 else:
     empAmount = 0
 
+#Display results.
 print("The store bonus amount is $",storeAmount)
 print("The employee bonus amount is $",empAmount)
 if (storeAmount == 6000) and (empAmount == 75):
